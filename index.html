@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$fish</title>
+    <title>$sqar</title>
     <link rel="icon" type="image/png" href="data/imgs/logo.jpg" />
     <style>
       body,
@@ -23,9 +23,10 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       .banner img {
+        padding-top: 5px;
         width: 40px;
         height: auto;
-        margin: 0 10px;
+        margin: 1 10px;
       }
       .page {
         width: 100%;
@@ -34,29 +35,56 @@
         background-position: center;
         background-repeat: no-repeat;
         padding-top: 70px;
+        position: relative;
       }
       #page1 {
-        background-image: url("data/imgs/image2.jpg");
+        background-image: url("data/imgs/42.png");
       }
       #page2 {
-        background-image: url("data/imgs/image1.jpg");
+        background-image: url("data/imgs/43.png");
+      }
+      .link-area {
+        position: absolute;
+        opacity: 0.5;
+      }
+      .telegram-link {
+        top: 665px;
+        left: 700px;
+        width: 115px;
+        height: 75px;
+        /* background-color: red; */
+      }
+      .twitter-link {
+        top: 35px;
+        left: 1495px;
+        width: 115px;
+        height: 75px;
+        /* background-color: red; */
+      }
+      .link-area:hover {
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="banner">
-      <a href="https://t.me/fishcoinsol"
+      <a href="https://t.me/+2rJeTJKstA0yODM5"
         ><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
           alt="Telegram"
       /></a>
-      <a href="https://twitter.com/Fishcoinsolana"
+      <a href="https://twitter.com/sqarsolana"
         ><img
           src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"
           alt="Twitter"
       /></a>
     </div>
-    <div id="page1" class="page"></div>
+    <div id="page1" class="page">
+      <!-- Transparent link area for the Telegram logo -->
+      <a href="https://t.me/+2rJeTJKstA0yODM5" class="link-area telegram-link"></a>
+      <!-- Transparent link area for the Twitter logo -->
+      <a href="https://twitter.com/sqarsolana" class="link-area twitter-link"></a>
+    </div>
     <div id="page2" class="page"></div>
   </body>
 </html>
